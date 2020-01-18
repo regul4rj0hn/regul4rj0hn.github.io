@@ -38,5 +38,5 @@ Proof of concept project for creating a static resume page using Blazor WebAssem
   `touch docs/.nojekyll`
 - Replace the base path of the app on Index.html
 
-  `sed -i -e 's/<base href="/" />/XYZ<base href="/resume/" />/g' /docs/index.html`
+  `sed -i -e 's/<base href="\/" \/>/<base href="\/resume\/" \/>/g' docs/index.html`
 - Commit and push the changes

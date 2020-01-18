@@ -36,4 +36,7 @@ Proof of concept project for creating a static resume page using Blazor WebAssem
 - Add a .nojekyll file so that GH Pages doesn't ignore the _framework folder
 
   `touch docs/.nojekyll`
+- Replace the base path of the app on Index.html
+
+  `sed -i -e 's/<base href="/" />/XYZ<base href="/resume/" />/g' /docs/index.html`
 - Commit and push the changes

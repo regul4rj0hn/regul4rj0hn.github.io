@@ -35,5 +35,5 @@ Proof of concept project for creating a static resume page using Blazor WebAssem
 
 - Add a .nojekyll file so that GH Pages doesn't ignore the _framework folder
 
-  `touch .nojekyll`
+  `touch docs/.nojekyll`
 - Commit and push the changes

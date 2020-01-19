@@ -3,9 +3,7 @@
 
 <h1>Projects</h1>
 
-<p>This component demonstrates fetching data from the server.</p>
-
-@if (forecasts == null)
+@if (projects == null)
 {
     <p><em>Loading...</em></p>
 }
@@ -15,19 +13,24 @@ else
         <thead>
             <tr>
                 <th>Date</th>
-                <th>Temp. (C)</th>
-                <th>Temp. (F)</th>
+                <th>Technologies</th>
                 <th>Summary</th>
+                <th>Key Contributions</th>
             </tr>
         </thead>
         <tbody>
-            @foreach (var forecast in forecasts)
+            @foreach (var proj in projects)
             {
                 <tr>
-                    <td>@forecast.Date.ToShortDateString()</td>
-                    <td>@forecast.TemperatureC</td>
-                    <td>@forecast.TemperatureF</td>
-                    <td>@forecast.Summary</td>
+                    <td>@proj.Date</td>
+                    <td>@proj.Technology</td>
+                    <td>@proj.Summary</td>
+                    <ul>
+                        @foreach (var contrib in proj.Contributions)
+                        {
+                            <li>@contrib</li>
+                        }
+                    </ul>
                 </tr>
             }
         </tbody>
@@ -35,21 +38,21 @@ else
 }
 
 @code {
-    private WeatherForecast[] forecasts;
+    private Project[] projects;
 
     protected override async Task OnInitializedAsync()
     {
-        forecasts = await Http.GetJsonAsync<WeatherForecast[]>("sample-data/weather.json");
+        projects = await Http.GetJsonAsync<Project[]>("data/projects.json");
     }
 
-    public class WeatherForecast
+    public class Project
     {
-        public DateTime Date { get; set; }
+        public string Date { get; set; }
 
-        public int TemperatureC { get; set; }
+        public string Technology { get; set; }
 
         public string Summary { get; set; }
 
-        public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
+        public string[] Contributions { get; set; }
     }
 }

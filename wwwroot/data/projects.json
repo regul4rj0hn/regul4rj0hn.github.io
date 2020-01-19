@@ -1,5 +1,6 @@
 ﻿[
   {
+    "name": "Identity Provider",
     "date": "August 2017 - Present",
     "technology": "AWS, ASP.NET Core, Identity Server 4, C#, PostgreSQL",
     "summary": "The Identity Provider project aims to unify the company's authentication and user's data, having a set of online services and website that authenticates users by means of security tokens.",
@@ -12,6 +13,7 @@
     ]
   },
   {
+    "name": "Fleet Monitoring System",
     "date": "October 2011 - Present",
     "technology": "AWS, ASP.NET Framework, SQL Server, Kafka",
     "summary": "The FMS is a web-based companion product to the Remote Presence telehealth devices, designed specifically to support an administrator's fleet management and monitoring workflow.",

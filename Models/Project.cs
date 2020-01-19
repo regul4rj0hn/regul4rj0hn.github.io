@@ -1,8 +1,11 @@
-public class Project
+namespace resume.Models
 {
-    public string Name { get; set; }
-    public string Date { get; set; }
-    public string Technology { get; set; }
-    public string Summary { get; set; }
-    public string[] Contributions { get; set; }
+    public class Project
+    {
+        public string Name { get; set; }
+        public string Date { get; set; }
+        public string Technology { get; set; }
+        public string Summary { get; set; }
+        public string[] Contributions { get; set; }
+    }
 }

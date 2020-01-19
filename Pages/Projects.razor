@@ -7,40 +7,40 @@
 }
 else
 {
-    <div>
-        @foreach (var proj in projects)
-        {
-            <div class="card">
-                <div class="card-header text-center">
-                    @proj.Name
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title">@proj.Technology</h5>
-                    <p class= "card-text">@proj.Summary</p>
-                    <p class="card-text">
-                        <ul>
-                        @foreach (var contrib in proj.Contributions)
-                        {
-                            <li>@contrib</li>
-                        }
+    <div class="container-fluid content-row">
+        <div class="row">
+            @foreach (var proj in projects)
+            {
+                <div class="col-sm-6 mb-3">
+                    <div class="card h-100">
+                        <div class="card-header text-center font-weight-bold">
+                            @proj.Name
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">@proj.Technology</h5>
+                            <p class= "card-text">@proj.Summary</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            @foreach (var contrib in proj.Contributions)
+                            {
+                                <li class="list-group-item">@contrib</li>
+                            }
                         </ul>
-                    </p>
+                        <div class="card-footer text-muted text-center">
+                            @proj.Date
+                        </div>
+                    </div>
                 </div>
-                <div class="card-footer text-muted text-center">
-                    @proj.Date
-                </div>
-            </div>
-            <br>
-        }
+            }
+        </div>
     </div>
-
 }
 
 @code {
-    private Project[] projects;
+    private Models.Project[] projects;
 
     protected override async Task OnInitializedAsync()
     {
-        projects = await Http.GetJsonAsync<Project[]>("data/projects.json");
+        projects = await Http.GetJsonAsync<Models.Project[]>("data/projects.json");
     }
 }

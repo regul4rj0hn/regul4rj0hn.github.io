@@ -1,16 +1,40 @@
 ﻿@page "/experience"
+@inject HttpClient Http
 
-<h1>Experience</h1>
-
-<p>Current count: @currentCount</p>
-
-<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+@if (experience == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <div class="container-fluid content-row">
+        <div class="row">
+            @foreach (var xp in experience)
+            {
+                <div class="col-sm-6 mb-3">
+                    <div class="card h-100">
+                        <div class="card-header text-center">
+                            @xp.Company
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">@xp.Title</h5>
+                            <p class= "card-text">@xp.Summary</p>
+                        </div>
+                        <div class="card-footer text-muted text-center">
+                            @xp.Date
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+}
 
 @code {
-    private int currentCount = 0;
+    private Models.Experience[] experience;
 
-    private void IncrementCount()
+    protected override async Task OnInitializedAsync()
     {
-        currentCount++;
+        experience = await Http.GetJsonAsync<Models.Experience[]>("data/experience.json");
     }
 }

@@ -1,0 +1,26 @@
+﻿[
+  {
+    "title": "Engineering Tech Lead",
+    "company": "InTouch Health",
+    "date": "September 2017 - Present",
+    "summary": "Managing a small team of software engineers with responsibilities over several full-stack projects, technologies and designs. Developing an Identity Provider server, an Authorization Provider, and a set of web APIs for a device’s Fleet Monitoring System, all hosted with high-availability on AWS Elastic Beanstalk and RDS."
+  },
+  {
+    "title": "Software Engineer",
+    "company": "InTouch Health",
+    "date": "February 2014 - August 2017",
+    "summary": "As a member of a scrum team designing, developing and maintaining a collection of systems consisting of a set of web applications, Windows services, and REST web services to monitor and administer the company's telehealth devices fleet."
+  },
+  {
+    "title": "Software QA Engineer",
+    "company": "InTouch Health",
+    "date": "October 2011 - January 2014",
+    "summary": "Performing tests on web-based applications and validating their functionality before they reached the customers. Proposing and working on the first automation project for some of the extensive suite of test cases."
+  },
+  {
+    "title": "IT, Technical Services",
+    "company": "InTouch Health",
+    "date": "December 2009 - September 2011",
+    "summary": "As a part of the Technical Support team assisting physicians and solving all kinds of problems over the phone. Additionally, performing server’s maintenance tasks, creating automated scripts for recurrent tasks, and training new members of the team on new systems or procedures."
+  }
+]

@@ -2,6 +2,7 @@
 - [Table of Contents](#table-of-contents)
 - [Description](#description)
 - [Getting started](#getting-started)
+- [Folder structure](#folder-structure)
 - [Publish to GitHub Pages](#publish-to-github-pages)
 
 # Description
@@ -20,6 +21,18 @@ Proof of concept project for creating a static resume page using Blazor WebAssem
 - Run the project
 
   `dotnet run`
+
+# Folder structure
+```
+.
++-- docs
+|  +-- source for GitHub Pages build
++-- src
+|  +-- source code for the Blazor app
++-- .gitignore
++-- LICENSE
++-- README.md
+```
 
 # Publish to GitHub Pages
 

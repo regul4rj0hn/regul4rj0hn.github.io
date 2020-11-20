@@ -1,9 +1,15 @@
 ﻿[
   {
-    "title": "Engineering Tech Lead",
+    "title": "Lead Software Architect",
+    "company": "Teladoc Health",
+    "date": "October 2020 - Present",
+    "summary": "Interacting with stakeholders and product managers to identify business requirements. Document, communicate, and provide complete technical support of various projects for a big team of engineers, throughout their development cycle. Current focus is to migrate parts of a monolithic system into a microservices architecture, and collaborating with other parties towards FedRAMP compliance."
+  },
+  {
+    "title": "Engineering Team Lead",
     "company": "InTouch Health",
-    "date": "September 2017 - Present",
-    "summary": "Managing a small team of software engineers with responsibilities over several full-stack projects, technologies and designs. Developing an Identity Provider server, an Authorization Provider, and a set of web APIs for a device’s Fleet Monitoring System, all hosted with high-availability on AWS Elastic Beanstalk and RDS."
+    "date": "September 2017 - September 2020",
+    "summary": "Managing a small team of software engineers with responsibilities over several full-stack projects, technologies and designs. Developing an Identity Provider server, an Authorization Provider, and a set of web APIs for a device’s Fleet Monitoring System, all hosted with high-availability on AWS."
   },
   {
     "title": "Software Engineer",

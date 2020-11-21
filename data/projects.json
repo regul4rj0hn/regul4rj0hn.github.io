@@ -1,0 +1,30 @@
+﻿[
+  {
+    "name": "Identity Provider",
+    "date": "August 2017 - Present",
+    "technology": "AWS, ASP.NET Core, Identity Server 4, C#, PostgreSQL",
+    "summary": "Aims to unify the company's authentication and user identity data with set of web APIs and a front-end website, that authenticates users and systems by means of security tokens.",
+    "contributions": [
+      "Implemented from scratch using the latest ASP.NET Core using the OpenID Connect Certified IdentityServer4 framework",
+      "Achieved a high-availability architecture through AWS technologies: Elastic Beanstalk, RDS, Application ELB for multiple running instances and with MultiAZ, Rolling updates, Blue-Green deployments and a fallback region",
+      "On-boarded several clients from the company including SPAs, WebApps, and protected API resources",
+      "Added SAML support and integrated with external federation services, such as customers' ADFS identity servers",
+      "Worked on a continuous integration and continuous deployment pipeline"
+    ]
+  },
+  {
+    "name": "Fleet Monitoring System",
+    "date": "October 2011 - Present",
+    "technology": "AWS, ASP.NET Framework, SQL Server, Kafka",
+    "summary": "Web-based pages and APIs companion to the Remote Presence telehealth devices, custom-designed to support an administrator's fleet management and monitoring workflow.",
+    "contributions": [
+      "Implemented a publisher for pushing messages to Kafka servers",
+      "Integrated the FMS with Auth0 and Salesforce APIs",
+      "Worked on a synchronization module for distributed SIP servers",
+      "Redesigned the database model, and refactored code to modern standards of C#",
+      "Migrated servers to Windows Server 2016 on cloud Amazon Web Services",
+      "Migrated of the code base from centralized Perforce VCS to GitHub",
+      "Lead an agile Scrum team that transitioned into Kanban with modern extreme programming techniques"
+    ]
+  }
+]

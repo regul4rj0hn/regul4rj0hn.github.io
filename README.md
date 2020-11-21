@@ -7,7 +7,7 @@
 
 # Description
 
-Proof of concept of simple static SPA site to host my (always out-of-date) resume.
+Proof of concept of a simple SPA to host my (always out-of-date) resume.
 - Uses latest Blazor WebAssembly.
 - Hosted by GitHub Pages.
 - Builds automatically on push with GitHub Actions.

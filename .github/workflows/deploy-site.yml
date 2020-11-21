@@ -26,11 +26,11 @@ jobs:
       run: dotnet publish src/resume.csproj -c Release --nologo
     
     - name: Add .nojekyll
-      run: touch src/bin/Release/netstandard2.1/dist/.nojekyll
+      run: touch src/bin/Release/netstandard2.1/publish/resume/dist/.nojekyll
     
     - name: Deploy to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@3.7.1
       with:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         BRANCH: gh-pages
-        FOLDER: src/bin/Release/netstandard2.1/dist
+        FOLDER: src/bin/Release/netstandard2.1/publish/resume/dist

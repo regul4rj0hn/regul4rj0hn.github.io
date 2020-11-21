@@ -7,14 +7,18 @@
 
 # Description
 
-Proof of concept project for creating a static resume page using Blazor WebAssembly hosted on GitHub Pages.
+Proof of concept of a simple SPA to host my (always out-of-date) resume.
+- Uses latest Blazor WebAssembly.
+- Hosted by GitHub Pages.
+- Builds automatically on push with GitHub Actions.
+- Custom domain by Google Domains.
 
 # Getting started
 
 - Install the [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet-core/3.1).
 - Clone this repository
 
-  `git clone https://github.com/regul4rj0hn/resume.git`
+  `git clone https://github.com/regul4rj0hn/regul4rj0hn.github.io.git`
 - Change directory to the project folder
 
   `cd resume`
@@ -25,8 +29,8 @@ Proof of concept project for creating a static resume page using Blazor WebAssem
 # Folder structure
 ```
 .
-+-- docs
-|  +-- source for GitHub Pages build
++-- .github
+|  +-- GitHub Action for automatic deployment
 +-- src
 |  +-- source code for the Blazor app
 +-- .gitignore
@@ -36,18 +40,4 @@ Proof of concept project for creating a static resume page using Blazor WebAssem
 
 # Publish to GitHub Pages
 
-- Publish the release version using the dotnet CLI
-
-  `dotnet publish -c "Release"`
-- Remove the previous contents of the docs folder
-
-  `rm -rf docs/*`
-- Copy the publish output into the docs folder
-
-  `cp -r bin/Release/netstandard2.1/publish/resume/dist/* docs/`
-
-- Add a .nojekyll file so that GH Pages doesn't ignore the _framework folder
-
-  `touch docs/.nojekyll`
-  
-- Commit and push the changes
+- The project is automatically published to GitHub Pages on the gh-pages branch by GitHub Actions whenever there's a commit to master.

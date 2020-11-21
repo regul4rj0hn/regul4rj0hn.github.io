@@ -24,7 +24,10 @@ jobs:
       
     - name: Publish
       run: dotnet publish src/resume.csproj -c Release --nologo
-      
+    
+    - name: Add .nojekyll
+      run: touch src/bin/Release/netstandard2.1/dist/.nojekyll
+    
     - name: Deploy to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@3.7.1
       with:

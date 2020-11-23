@@ -21,7 +21,7 @@ Proof of concept of a simple SPA to host my (always out-of-date) resume.
   `git clone https://github.com/regul4rj0hn/regul4rj0hn.github.io.git`
 - Change directory to the project folder
 
-  `cd resume`
+  `cd regul4rj0hn.github.io.git/src`
 - Run the project
 
   `dotnet run`

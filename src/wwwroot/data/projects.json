@@ -27,5 +27,16 @@
       "Migrated of the code base from centralized Perforce VCS to GitHub",
       "Lead an agile Scrum team that transitioned into Kanban with modern extreme programming techniques"
     ]
+  },
+  {
+    "name": "Independent Projects",
+    "date": "Present",
+    "technology": "Blazor WebAssembly, GitHub Pages, GitHub Actions, Google Domains",
+    "summary": "I am a technology enthusiast, this Single Page Application is just an example!",
+    "contributions": [
+      "I love improving my skills on my own free time reading technical books and doing courses",
+      "Working prototypes: \"To learn and not to do is really not to learn. To know and not to do is really not to know.\" -Stephen R. Covey ",
+      "Attend conferences in person or virtually to learn from others and stay up-to-date with upcoming technologies"
+    ]
   }
 ]
